@@ -30,7 +30,9 @@ const Header = () => {
   const ul1 = $('<ul class="nav navbar-nav hidden-xs"></ul>');
   const li1 = $('<li class="active"></li>');
   const span3 = $('<span class="glyphicon glyphicon-search">SEARCH</span>');
+  const hr  = $('<hr>');
   container.append(divColla);
+  container.append(hr);
   divColla.append(ul1);
   ul1.append(li1);
   li1.append(span3);

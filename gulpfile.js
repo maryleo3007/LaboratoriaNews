@@ -56,6 +56,7 @@ gulp.task("sass",function () {
 gulp.task("js",function () {
   var js = gulp.src([sources.rootJs+'get-news.js',
                     sources.rootJs+'nav-header.js',
+                    sources.rootJs+'news-date.js',
                     sources.rootJs+'news-body.js',
                     sources.rootJs+'news-detail.js',
                     sources.rootJs+'app.js'])

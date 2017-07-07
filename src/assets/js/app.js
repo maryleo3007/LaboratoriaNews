@@ -5,8 +5,10 @@ const render = (root) =>{
   const wrapper = $('<div class="wrapper"></div>'); // dentro este div vaos a devolver todos los demas elements como lo hace react
 
   wrapper.append(Header());
+  wrapper.append(NewBody());
+  wrapper.append(ContentBody());
   // if (state.selectMovie == null) {
-  //   wrapper.append(MovieGrid(_ => {
+  //   wrapper.append(NewBody(_ => {
   //       render(root);
   //   }));
   //
@@ -27,7 +29,7 @@ $( _ => {
   getNews((err,data) => {
     if (err) console.log(err);
     console.log(data);
-    data = state.news;
+    state.news = data;
     const root = $("#root");
     render(root,data);
   });

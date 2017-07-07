@@ -6,9 +6,39 @@ body{
 .bg-grey{
   background-color: $gray-light ;
 }
+.bg-lab{
+  background-color: $laboratoria-color;
+}
 a{
   color: black;
 }
+li{
+  list-style: none;
+}
+
+h3{
+  color: #ffffff;
+}
+
+//mixins
+@mixin flex($direction: row, $justify: '', $align: '') {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin make-image($height) {
+  height: $height;
+}
+@mixin  pAbs($position,$bottom,$height,$colortext,$bgcolor,$width){
+  position: $position;
+  bottom: $bottom;
+  height: $height;
+  background-color: $bgcolor;
+  color: $colortext;
+  width: $width;
+}
+
 //header
 .container-fluid>.navbar-collapse{
   margin-top: 17px;
@@ -18,5 +48,43 @@ a{
 }
 .navbar-nav>li {
     margin-right: 10px;
-    list-style: none;
+}
+.navbar-fixed-top {
+  background-color: #fff;
+}
+//date news
+.containerLogo{
+  margin-top: 7%;
+}
+
+.logoImg{
+  margin-left: 25%;
+}
+//body news
+
+.ul-contain{
+  height: 30px;
+  vertical-align: sub;
+  margin-bottom: 0px;
+  li{
+    display: inline;
+    margin-right: 60px;
+    color: #ffffff;
+  }
+}
+
+.imgContent0{
+  @include make-image(290px);
+  @media (min-width: 992px) {
+        @include make-image(361px);
+      }
+}
+.colContentImg{
+  position: relative;
+}
+.pAbs{
+  @include pAbs(absolute,50px,120px,$white,none,80%);
+  @media (min-width: 992px) {
+        @include pAbs(absolute,50px,100px,$white,none,60%);
+      }
 }
