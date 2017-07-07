@@ -1,0 +1,22 @@
+@import "components/variables";
+
+body{
+  font-family: $monserrat-sans;
+}
+.bg-grey{
+  background-color: $gray-light ;
+}
+a{
+  color: black;
+}
+//header
+.container-fluid>.navbar-collapse{
+  margin-top: 17px;
+}
+.navbar-right {
+    margin-right: 30px;
+}
+.navbar-nav>li {
+    margin-right: 10px;
+    list-style: none;
+}
