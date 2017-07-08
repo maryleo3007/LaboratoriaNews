@@ -21,8 +21,8 @@ h3{
 }
 
 //mixins
-@mixin flex($direction: row, $justify: '', $align: '') {
-  display: flex;
+@mixin flex($display,$direction, $justify, $align) {
+  display: $display;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
@@ -33,6 +33,15 @@ h3{
 @mixin  pAbs($position,$bottom,$height,$colortext,$bgcolor,$width){
   position: $position;
   bottom: $bottom;
+  height: $height;
+  background-color: $bgcolor;
+  color: $colortext;
+  width: $width;
+}
+@mixin  AbsHoy($position,$bottom,$height,$colortext,$bgcolor,$width,$left){
+  position: $position;
+  bottom: $bottom;
+  left: $left;
   height: $height;
   background-color: $bgcolor;
   color: $colortext;
@@ -60,6 +69,7 @@ h3{
 .logoImg{
   margin-left: 25%;
 }
+
 //body news
 
 .ul-contain{
@@ -77,9 +87,9 @@ h3{
   @include make-image(290px);
   @media (min-width: 992px) {
         @include make-image(361px);
-      }
+  }
 }
-.colContentImg{
+.posRelative{
   position: relative;
 }
 .pAbs{
@@ -88,3 +98,57 @@ h3{
         @include pAbs(absolute,50px,100px,$white,none,60%);
       }
 }
+.rowUltimo{
+  margin-top: 30px;
+}
+.contentUltimo{
+  @include flex(flex,row,space-around,flex-end);
+  @include pAbs(static,50px,60px,$white,$gray-light,100%);
+  @media (min-width: 992px) {
+        @include pAbs(static,100px,60px,$white,$gray-light,100%);
+      }
+}
+
+.imgNews1{
+  @media (min-width: 992px) {
+        @include make-image(263px);
+  }
+}
+.contentUltimo1{
+  @include flex(flex,row,space-around,flex-end);
+  @include pAbs(static,50px,60px,$white,$gray-light,99.9%);
+  @media (min-width: 992px) {
+        @include pAbs(static,100px,60px,$white,$gray-light,98.5%);
+      }
+}
+//
+.col-content-ultimo{
+  margin-top: 15px;
+  @include flex(flex,row,space-around,flex-end);
+  @media (min-width: 992px) {
+    margin-top: 0px;
+    display: block;
+  }
+}
+.imgNews2{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 119px;
+    width: 50%;
+
+    @media (min-width: 992px) {
+      height: 263px;
+      width: 100%;
+    }
+}
+.contentUltimo2{
+  @include flex(flex,row,space-around,flex-end);
+  @include pAbs(static,119px,119px,$white,$gray-light,50%);
+  @media (min-width: 992px) {
+    @include pAbs(static,60px,60px,$white,$gray-light,100%);
+  }
+}
+.hoy{
+  @include AbsHoy(absolute,45px,30px,$white,$laboratoria-color,50px,100px)
+}
+//component MUNDO

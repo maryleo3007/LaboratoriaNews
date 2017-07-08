@@ -19,9 +19,7 @@ const getNew = (id,callback) => {
   })
 }
 
-},{}]},{},[1])
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
+ 'use strict';
 
 const Header = () => {
 
@@ -91,9 +89,7 @@ const Header = () => {
   return header;
 }
 
-},{}]},{},[1])
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
+ 'use strict';
 
 const NewBody = () => {
 
@@ -116,9 +112,7 @@ const NewBody = () => {
   return container;
 }
 
-},{}]},{},[1])
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
+ 'use strict';
 
 const ContentBody = () => {
 console.log(state.news[0].img);
@@ -140,37 +134,53 @@ console.log(state.news[0].img);
   col1.append(ul3);
   ul3.append(li5,li6,li7,li8,li9,li10,li11,li12,li13);
 
-  const col2 = $('<div class="col-md-12 col-xs-12 colContentImg"></div>');
+  const col2 = $('<div class="col-md-12 col-xs-12 posRelative"></div>');
   row.append(col2);
   const img = $('<img src="assets/img/'+state.news[0].img+'" class="img-responsive imgContent0" alt="">');
   col2.append(img);
-  const div = $('<div class="col-md-12 col-xs-12  colContentImg pAbs"></div>');
+  const div = $('<div class="col-md-12 col-xs-12  posRelative pAbs"></div>');
   const h3 = $('<h3 class="">'+state.news[0].title+'</h3>');
   const p = $('<p class="hidden-xs">'+state.news[0].brief+'</p>');
   col2.append(div);
-  div.append(h3);
-  div.append(p);
+  div.append(h3,p);
 
-  const col3 = $('<div class="col-md-6 col-xs-12 colContentImg"></div>');
-  row.append(col2);
-  const img = $('<img src="assets/img/'+state.news[0].img+'" class="img-responsive imgContent0" alt="">');
-  col2.append(img);
-  const div = $('<div class="col-md-12 col-xs-12  colContentImg pAbs"></div>');
-  const h3 = $('<h3 class="">'+state.news[0].title+'</h3>');
-  const p = $('<p class="hidden-xs">'+state.news[0].brief+'</p>');
-  col2.append(div);
-  div.append(h3);
-  div.append(p);
+
+
+  const row2 = $('<div class="row rowUltimo"></div>');
+  container.append(row2);
+  const col3 = $('<div class="col-md-6 col-xs-12 posRelative"></div>');
+  const hoy = $('<div class="hoy">HOY</div>');
+  col3.append(hoy);
+  const col4 = $('<div class="col-md-3 col-xs-12 col-content-ultimo"></div>');
+  const col5 = $('<div class="col-md-3 col-xs-12 col-content-ultimo"></div>');
+  row2.append(col3,col4,col5);
+
+  const img3 = $('<img src="assets/img/'+state.news[1].img+'" class="img-responsive imgNews1" alt="">');
+  col3.append(img3);
+  const div3 = $('<div class="col-md-12 col-xs-6 contentUltimo1"></div>');
+  const p3 = $('<p class="">'+state.news[1].title+'</p>');
+  col3.append(div3);
+  div3.append(p3);
+
+  const img4 = $('<img src="assets/img/'+state.news[2].img+'" class="img-responsive imgNews2" alt="">');
+  col4.append(img4);
+  const div4 = $('<div class="col-md-12 col-xs-6 contentUltimo2"></div>');
+  const p4 = $('<p class="">'+state.news[2].title+'</p>');
+  col4.append(div4);
+  div4.append(p4);
+
+  const img5 = $('<img src="assets/img/'+state.news[3].img+'" class="img-responsive imgNews2" alt="">');
+  col5.append(img5);
+  const div5 = $('<div class="col-md-12 col-xs-6 contentUltimo2"></div>');
+  const p5 = $('<p class="">'+state.news[3].title+'</p>');
+  col5.append(div5);
+  div5.append(p5);
 
   return container;
 }
 
-},{}]},{},[1])
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
-},{}]},{},[1])
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict'; //obliga a escribir es6
+ 'use strict'; //obliga a escribir es6
 
 const render = (root) =>{
   root.empty();
