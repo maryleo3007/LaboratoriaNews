@@ -152,3 +152,14 @@ h3{
   @include AbsHoy(absolute,45px,30px,$white,$laboratoria-color,50px,100px)
 }
 //component MUNDO
+
+.contentMundo1{
+  @include flex(flex,row,space-around,flex-end);
+  @include pAbs(static,50px,60px,$white,$gray-light,99.9%);
+  @media (min-width: 992px) {
+        @include pAbs(static,100px,60px,$white,$gray-light,99.9%);
+      }
+}
+.imgMundoBig{
+  height: 400px;
+}

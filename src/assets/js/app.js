@@ -7,6 +7,7 @@ const render = (root) =>{
   wrapper.append(Header());
   wrapper.append(NewBody());
   wrapper.append(ContentBody());
+  wrapper.append(NewsMundo());
   // if (state.selectMovie == null) {
   //   wrapper.append(NewBody(_ => {
   //       render(root);

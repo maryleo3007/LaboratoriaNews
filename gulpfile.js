@@ -58,6 +58,7 @@ gulp.task("js",function () {
                     sources.rootJs+'nav-header.js',
                     sources.rootJs+'news-date.js',
                     sources.rootJs+'news-body.js',
+                    sources.rootJs+'news-mundo.js',
                     sources.rootJs+'news-detail.js',
                     sources.rootJs+'app.js'])
       .pipe(browserify())
