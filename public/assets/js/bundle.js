@@ -262,54 +262,58 @@ console.log(state.news[0].img);
   const row5 = $('<div class="row rowUltimo"></div>');
   container.append(row5);
 
-  // let num = 51;
+  let num = 51;
+  const columna = "col";
+  const imagen = "img";
+  const contenedor = "div";
+  console.log(columna+num);
   // for (var i = 9; i < 13; i++) {
-  //   const col+num = $('<div class="col-md-3 col-xs-12 "></div>');
-  //   row5.append(col51);
-  //   const img+num = $('<img src="assets/img/'+state.news[i].img+'" class="img-responsive" alt="">');
-  //   col51.append(img51);
-  //   const div51 = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
-  //   const p51 = $('<p class="">'+state.news[9].title+'</p>');
-  //   col51.append(div51);
-  //   div51.append(p51);
+  //   const (columna+num) = $('<div class="col-md-3 col-xs-12 "></div>');
+  //   row5.append(columna+num);
+  //   const (imagen+num) = $('<img src="assets/img/'+state.news[i].img+'" class="img-responsive" alt="">');
+  //   (columna+num).append(imagen+num);
+  //   const (contenedor+num) = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
+  //   const (p+num) = $('<p class="">'+state.news[i].title+'</p>');
+  //   (columna+num).append(contenedor+num);
+  //   (contenedor+num).append(p+num);
   //   num++;
   // }
 
-  const col51 = $('<div class="col-md-3 col-xs-12 "></div>');
-  row5.append(col51);
-  const img51 = $('<img src="assets/img/'+state.news[9].img+'" class="img-responsive" alt="">');
-  col51.append(img51);
-  const div51 = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
-  const p51 = $('<p class="">'+state.news[9].title+'</p>');
-  col51.append(div51);
-  div51.append(p51);
-
-  const col61 = $('<div class="col-md-3 col-xs-12 "></div>');
-  row5.append(col61);
-  const img61 = $('<img src="assets/img/'+state.news[10].img+'" class="img-responsive" alt="">');
-  col61.append(img61);
-  const div61 = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
-  const p61 = $('<p class="">'+state.news[10].title+'</p>');
-  col61.append(div61);
-  div61.append(p61);
-
-  const col71 = $('<div class="col-md-3 col-xs-12 "></div>');
-  row5.append(col71);
-  const img71 = $('<img src="assets/img/'+state.news[11].img+'" class="img-responsive" alt="">');
-  col71.append(img71);
-  const div71 = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
-  const p71 = $('<p class="">'+state.news[11].title+'</p>');
-  col71.append(div71);
-  div71.append(p71);
-
-  const col81 = $('<div class="col-md-3 col-xs-12 "></div>');
-  row5.append(col81);
-  const img81 = $('<img src="assets/img/'+state.news[12].img+'" class="img-responsive" alt="">');
-  col81.append(img81);
-  const div81 = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
-  const p81 = $('<p class="">'+state.news[12].title+'</p>');
-  col81.append(div81);
-  div81.append(p81);
+  // const col51 = $('<div class="col-md-3 col-xs-12 "></div>');
+  // row5.append(col51);
+  // const img51 = $('<img src="assets/img/'+state.news[9].img+'" class="img-responsive" alt="">');
+  // col51.append(img51);
+  // const div51 = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
+  // const p51 = $('<p class="">'+state.news[9].title+'</p>');
+  // col51.append(div51);
+  // div51.append(p51);
+  //
+  // const col61 = $('<div class="col-md-3 col-xs-12 "></div>');
+  // row5.append(col61);
+  // const img61 = $('<img src="assets/img/'+state.news[10].img+'" class="img-responsive" alt="">');
+  // col61.append(img61);
+  // const div61 = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
+  // const p61 = $('<p class="">'+state.news[10].title+'</p>');
+  // col61.append(div61);
+  // div61.append(p61);
+  //
+  // const col71 = $('<div class="col-md-3 col-xs-12 "></div>');
+  // row5.append(col71);
+  // const img71 = $('<img src="assets/img/'+state.news[11].img+'" class="img-responsive" alt="">');
+  // col71.append(img71);
+  // const div71 = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
+  // const p71 = $('<p class="">'+state.news[11].title+'</p>');
+  // col71.append(div71);
+  // div71.append(p71);
+  //
+  // const col81 = $('<div class="col-md-3 col-xs-12 "></div>');
+  // row5.append(col81);
+  // const img81 = $('<img src="assets/img/'+state.news[12].img+'" class="img-responsive" alt="">');
+  // col81.append(img81);
+  // const div81 = $('<div class="col-md-3 col-xs-12 contentUltimo1"></div>');
+  // const p81 = $('<p class="">'+state.news[12].title+'</p>');
+  // col81.append(div81);
+  // div81.append(p81);
 
 return container;
 }
